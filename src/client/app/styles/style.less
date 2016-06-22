@@ -1,0 +1,51 @@
+// all convertors styles
+.editor {
+  min-height: 350px;
+  // width: 550px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.editorOutput {
+  min-height: 350px;
+  // width: 550px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.commonStyle {
+  .ui.checkbox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .ui.massive.button {
+    margin-top: 10px;
+  }
+}
+
+.HtmltoJade {
+  
+  #html-edit { .editor; }
+  
+  #jade-edit { .editorOutput; }
+  .commonStyle;
+}
+
+.CssToLess {
+  .commonStyle;
+  #css-edit { .editor; }
+  #less-edit { .editorOutput; }
+}
+
+.HtmltoJsx {
+  .commonStyle;
+  #html-edit { .editor; }
+  #jsx-edit { .editorOutput; }
+}
+
+.CssToStylus {
+  .commonStyle;
+  #css-edit { .editor; }
+  #stylus-edit { .editorOutput; }
+}
