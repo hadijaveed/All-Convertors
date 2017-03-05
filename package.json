@@ -42,10 +42,6 @@
     "js2coffee": "^2.2.0",
     "lodash": "^4.13.1",
     "react": "^0.14.6",
-    "react-dom": "^0.14.6",
-    "semantic-ui-checkbox": "^2.1.7",
-    "semantic-ui-dropdown": "^2.1.7",
-    "semantic-ui-popup": "^2.1.7",
-    "semantic-ui-transition": "^2.1.7"
+    "react-dom": "^0.14.6"
   }
 }

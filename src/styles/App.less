@@ -1,0 +1,60 @@
+.container {
+    padding: 0px 50px 0 50px;
+}
+
+.row {
+    &::before, &::after {
+        clear: both;
+    }
+    display: flex;
+    flex-direction: row;
+}
+
+.default-heading {
+    padding: 10px 0 !important;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    letter-spacing: 6px;
+    font-weight: 500;
+    color: #313030;
+}
+
+h1 {
+    .default-heading;
+}
+
+h2 {
+    .default-heading;
+    padding: 0 !important;
+    font-size: 1.1em;
+    letter-spacing: 4px;
+}
+
+h2.right-aligned {
+    float: right;
+}
+
+.center {
+    justify-content: center;
+}
+
+
+
+select.dropdown {
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    font-size: 1.0em;
+    align-self: center;
+    width: 200px;
+}
+
+.box-container {
+    margin: 20px 30px 10px 0;
+    .editor {
+        min-height: 350px;
+        width: 620px;
+        background-color: #fff;
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+    }
+}
