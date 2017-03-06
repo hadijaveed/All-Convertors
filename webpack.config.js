@@ -10,7 +10,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: 'bundle.min.js',
     publicPath: 'http://localhost:3000/',
   },
   node: {
@@ -24,6 +24,12 @@ module.exports = {
     // Force HTMLtoJSX to use the in-browser `document` object rather than
     // require the Node-only "jsdom" package.
         IN_BROWSER: true,
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+        minimize: true,
+        compressor: {
+            warnings: false
+        }
     })
   ],
   module: {
