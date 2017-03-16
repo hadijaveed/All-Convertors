@@ -1,0 +1,3 @@
+News
+.find({})
+Gallery.find({})
