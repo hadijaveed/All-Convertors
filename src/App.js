@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import HtmltoJade from './components/_html_to_jade';
 import HtmlToJsx from './components/_html_to_jsx';
 import CssToStylus from './components/_css_to_stylus';
+import CssToLess from './components/_css_to_less';
 import './styles/App.less';
 
 class App extends Component {
@@ -20,7 +21,8 @@ class App extends Component {
         const convertors = {
             htmlToJade: <HtmltoJade />,
             htmlToJsx: <HtmlToJsx />,
-            cssToStylus: <CssToStylus />
+            cssToStylus: <CssToStylus />,
+            cssToScss: <CssToLess />
         };
         return convertors[this.state.editor];
     }
@@ -39,7 +41,7 @@ class App extends Component {
 
                         <option value="htmlToJade">Html to Jade</option>
                         <option value="htmlToJsx">Html to Jsx</option>
-                        <option value="cssToScss">Css to Scss</option>
+                        <option value="cssToScss">Css to Less</option>
                         <option value="cssToStylus">Css to Stylus</option>
 
                     </select>

@@ -35,6 +35,7 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
+    "css-scss": "^0.1.0",
     "css2less": "^0.1.4",
     "css2stylus": "^0.4.0",
     "htmltojsx": "^0.2.5",
@@ -42,6 +43,7 @@
     "js2coffee": "^2.2.0",
     "lodash": "^4.13.1",
     "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "react-dom": "^0.14.6",
+    "socket.io-client": "^1.7.3"
   }
 }

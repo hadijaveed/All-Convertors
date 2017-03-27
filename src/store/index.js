@@ -44,12 +44,16 @@ let getEditorConfig = function(editor) {
                 mode: 'ace/mode/stylus',
                 readOnly: true
             });
+        },
+
+        less: function() {
+            return Object.assign({}, editorConfig, {
+                mode: 'ace/mode/less',
+                readOnly: true
+            });
         }
     };
-    if (editorTypes.hasOwnProperty(editor)) {
-        console.log('see eidtor ', editor, 'value ', editorTypes[editor]());
-        return editorTypes[editor]();
-    }
+    if (editorTypes.hasOwnProperty(editor)) return editorTypes[editor]();
 };
 
 const emptyLineRegex = /^(?=\n)$|^\s*|\s*$|\n\n+/gm;
