@@ -3,7 +3,7 @@ import { getEditorConfig, emptyLineRegex } from '../store/index';
 import html2jade from 'html2jade';
 import ace from 'brace';
 import 'brace/mode/html';
-import 'brace/theme/chrome';
+import 'brace/theme/chrome' ;
 import 'brace/mode/jade';
 
 export default class HtmlToJade extends Component {
