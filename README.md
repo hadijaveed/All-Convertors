@@ -5,3 +5,4 @@ A simple ReactJs application that is built in WebPack environment. It provides y
 ### Work in progress
 1. Other css pre-processors like SASS and SCSS.
 2. JS to coffee script.
+3. Fix sloppy CSS editor when the file size grows to 1000 lines.
